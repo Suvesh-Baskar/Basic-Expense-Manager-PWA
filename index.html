@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" /> -->
+
+    <title>Basic Expense Manager PWA</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.0/examples/sign-in/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="text-center" onload="fetchAmount()">
+    <form class="form-signin" id="amountForm">
+      <h1 class="h3 mb-3 font-weight-normal" id="amount"></h1>
+      <label for="inputNumber" class="sr-only">Amount</label>
+      <div class="pb-5">
+        <input
+          type="number"
+          id="inputNumber"
+          class="form-control mb-5"
+          placeholder="Amount"
+          autofocus
+        />
+      </div>
+      <div class="checkbox mb-3">
+        <!-- <label>
+          <input type="checkbox" value="remember-me" /> Remember me
+        </label> -->
+      </div>
+      <div class="mb-3">
+        <button
+          class="btn btn-lg btn-block btn-danger"
+          type="submit"
+          id="expense"
+        >
+          +
+        </button>
+        <button
+          class="btn btn-lg btn-block btn-primary mt-5"
+          type="reset"
+          id="income"
+        >
+          -
+        </button>
+      </div>
+    </form>
+    <script src="js/main.js"></script>
+  </body>
+</html>
